@@ -429,7 +429,7 @@ void get_contours_s(
 		// the height of the contours
 
 		double max, min;
-		// cv::minMaxLoc(reduced_tight_mask, &min, &max);
+		cv::minMaxLoc(reduced_tight_mask, &min, &max);
 		// printf("min = %lf, max = %lf\n", min, max);
 		//exit(1);
 		// if the height of the heighest of the contour is greater that TEXT_MAX_THICKNESS
